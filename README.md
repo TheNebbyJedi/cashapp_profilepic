@@ -6,7 +6,7 @@ This is a small Python script that allows the input of a cashtag and will output
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CashTag OSINT Tool</title>
+  
 </head>
 <body>
   <h1>CashTag OSINT Tool</h1>
@@ -30,19 +30,7 @@ This is a small Python script that allows the input of a cashtag and will output
   <p>You can install these dependencies using pip:</p>
   <pre><code>pip install requests</code></pre>
   
-  <h2>License</h2>
-  <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-  
-  <h2>Contributing</h2>
-  <p>Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.</p>
-  
-  <h2>Support</h2>
-  <p>If you encounter any issues while using the script, or have any questions or feedback, please feel free to contact the author:</p>
-  <ul>
-    <li>Name: [Your Name]</li>
-    <li>Email: [Your Email]</li>
-  </ul>
-  
+ 
   <h2>Python Script</h2>
   <p>Below is the Python script (cashappprofilepic.py) included in this repository:</p>
   <pre><code>
