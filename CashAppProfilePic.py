@@ -16,19 +16,25 @@ def get_profile_photo(username):
             profile_photo_url = response.text[start_index:end_index]
             return profile_photo_url
         else:
-            return "Profile photo not found."
+            # No profile photo found, provide explanation and link
+            explanation = ("No profile photo was found, but this account does exist. "
+                           f"Click this link to see the account: "
+                           f"https://cash.app/${username}")
+            return explanation
     else:
-        return "Failed to fetch page source."
+        # No profile photo found, provide explanation
+        explanation = ("There is no Cash App account with this username.")
+        return explanation
 
 def main():
     # Prompt the user to enter a Cash App username
     username = input("Enter Cash App username: ")
     
-    # Get the profile photo URL
-    profile_photo_url = get_profile_photo(username)
+    # Get the profile photo URL or explanation
+    result = get_profile_photo(username)
     
-    # Display the profile photo URL
-    print("Profile photo URL:", profile_photo_url)
+    # Display the profile photo URL or explanation
+    print("Profile photo URL or Explanation:", result)
 
 if __name__ == "__main__":
     main()
